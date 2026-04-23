@@ -163,8 +163,8 @@
         { id: 1, name: "AMDK P2S2 220 ML", desc: "Isi: 48 CRT", tiers: [{max:14, price:19000}, {max:75, price:19000}, {max:200, price:18500}, {max:Infinity, price:18300}] },
         { id: 2, name: "AMDK P2S2 220 ML", desc: "Isi: 40 CRT", tiers: [{max:75, price:17500}, {max:200, price:17000}, {max:399, price:16800}, {max:Infinity, price:16300}] },
         { id: 3, name: "AMDK P2S2 330 ML", desc: "Per karton", tiers: [{max:5, price:38000}, {max:10, price:37000}, {max:25, price:34000}, {max:Infinity, price:33000}] },
-        { id: 4, name: "AMDK P2S2 660 ML (A)", desc: "Per karton", tiers: [{max:5, price:41500}, {max:10, price:40500}, {max:25, price:39500}, {max:Infinity, price:38500}] },
-        { id: 5, name: "AMDK P2S2 660 ML (B)", desc: "Per karton", tiers: [{max:5, price:41500}, {max:10, price:40500}, {max:25, price:39500}, {max:Infinity, price:38500}] }
+        { id: 4, name: "AMDK P2S2 660 ML", desc: "Per karton", tiers: [{max:5, price:41500}, {max:10, price:40500}, {max:25, price:39500}, {max:Infinity, price:38500}] },
+        { id: 5, name: "AMDK P2S2 1500 ML", desc: "Per karton", tiers: [{max:5, price:41500}, {max:10, price:40500}, {max:25, price:39500}, {max:Infinity, price:38500}] }
     ];
 
     let cart = [];
@@ -189,7 +189,7 @@
                 <div class="product-desc">${p.desc}</div>
                 <div class="price-info" id="price-info-${p.id}">Masukkan jumlah untuk melihat harga/CRT</div>
                 <div class="input-group">
-                    <input type="number" id="qty-${p.id}" class="qty-input" min="1" value="1" oninput="updatePriceDisplay(${p.id}, this.value)">
+                    <input type="number" id="qty-${p.id}" class="qty-input" min="1" value="0" oninput="updatePriceDisplay(${p.id}, this.value)">
                     <button class="btn btn-add" onclick="addToCart(${p.id})">Tambah Keranjang</button>
                 </div>
             </div>
