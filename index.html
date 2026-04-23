@@ -1,0 +1,344 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <title>Katalog Air Mineral P2S2 | Harga Grosir & Pesan Cepat via WA</title>
+    <meta name="description" content="Pesan Air Mineral P2S2 kualitas terbaik dengan harga grosir otomatis. Melayani pengiriman cepat untuk kebutuhan rumah tangga, kantor, dan acara.">
+    <meta name="keywords" content="Air Mineral P2S2, agen air mineral, harga air mineral grosir, pesan air mineral online, AMDK P2S2">
+    <meta name="author" content="P2S2 Official">
+    <link rel="canonical" href="https://domain-anda.com/">
+
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://domain-anda.com/">
+    <meta property="og:title" content="Katalog Air Mineral P2S2 - Harga Grosir">
+    <meta property="og:description" content="Dapatkan harga termurah dengan sistem tier pricing. Pesan sekarang melalui WhatsApp!">
+    <meta property="og:image" content="https://domain-anda.com/images/og-image-p2s2.jpg">
+    <meta property="og:image:width" content="1200">
+    <meta property="og:image:height" content="630">
+
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:title" content="Katalog Air Mineral P2S2">
+    <meta property="twitter:description" content="Layanan pemesanan Air Mineral P2S2 praktis dan murah.">
+    <meta property="twitter:image" content="https://domain-anda.com/images/og-image-p2s2.jpg">
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org/",
+      "@type": "Store",
+      "name": "Air Mineral P2S2",
+      "description": "Penyedia Air Mineral P2S2 berkualitas dengan harga grosir.",
+      "image": "https://domain-anda.com/images/og-image-p2s2.jpg",
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "Alamat Kantor Anda",
+        "addressLocality": "Kota",
+        "addressRegion": "Provinsi",
+        "addressCountry": "ID"
+      },
+      "priceRange": "$$"
+    }
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <style>
+        :root {
+            --primary: #0077b6;
+            --primary-dark: #005f92;
+            --light: #f8f9fa;
+            --dark: #212529;
+            --gray: #6c757d;
+            --success: #28a745;
+            --success-dark: #218838;
+            --card-bg: #ffffff;
+            --shadow: 0 4px 12px rgba(0,0,0,0.1);
+            --border: #e2e8f0;
+        }
+        * { box-sizing: border-box; margin: 0; padding: 0; font-family: 'Segoe UI', Roboto, Helvetica, Arial, sans-serif; }
+        body { background: #f1f5f9; color: var(--dark); line-height: 1.5; padding-bottom: 90px; }
+        
+        header {
+            background: linear-gradient(135deg, var(--primary), var(--primary-dark));
+            color: white; padding: 24px 0 20px; text-align: center; box-shadow: 0 4px 15px rgba(0,0,0,0.15);
+        }
+        header h1 { font-size: 1.8rem; margin-bottom: 6px; letter-spacing: 0.5px; }
+        header p { font-size: 0.95rem; opacity: 0.9; }
+
+        .container { max-width: 1000px; margin: 25px auto; padding: 0 16px; }
+        
+        .product-grid {
+            display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 20px;
+        }
+        .product-card {
+            background: var(--card-bg); border-radius: 14px; padding: 20px; box-shadow: var(--shadow);
+            transition: transform 0.2s, box-shadow 0.2s; border: 1px solid var(--border);
+        }
+        .product-card:hover { transform: translateY(-4px); box-shadow: 0 8px 20px rgba(0,0,0,0.12); }
+        .product-title { font-size: 1.15rem; font-weight: 700; margin-bottom: 4px; color: var(--primary-dark); }
+        .product-desc { color: var(--gray); font-size: 0.85rem; margin-bottom: 10px; }
+        .price-info { background: #eef6fc; padding: 10px; border-radius: 8px; font-size: 0.85rem; margin-bottom: 15px; min-height: 40px; display: flex; align-items: center; }
+        .price-info strong { color: var(--primary); }
+        
+        .input-group { display: flex; gap: 10px; margin-top: 8px; }
+        .qty-input { width: 80px; padding: 10px; border: 2px solid var(--border); border-radius: 8px; text-align: center; font-size: 1rem; }
+        .qty-input:focus { border-color: var(--primary); outline: none; }
+        .btn { flex: 1; padding: 12px; border: none; border-radius: 8px; cursor: pointer; font-weight: 600; transition: 0.2s; }
+        .btn-add { background: var(--primary); color: white; }
+        .btn-add:hover { background: var(--primary-dark); }
+
+        #fab-cart {
+            position: fixed; bottom: 24px; right: 24px;
+            background: var(--success); color: white; border: none; border-radius: 50px;
+            padding: 14px 26px; font-size: 1rem; font-weight: 700; cursor: pointer;
+            box-shadow: 0 8px 20px rgba(40,167,69,0.35); display: flex; align-items: center; gap: 10px;
+            transition: all 0.2s; z-index: 1000;
+        }
+        #fab-cart:hover { transform: scale(1.05); box-shadow: 0 10px 25px rgba(40,167,69,0.45); }
+        #fab-cart:active { transform: scale(0.98); }
+
+        /* SWEETALERT2 CHECKOUT FORM STYLING */
+        .swal2-checkout-popup { width: 540px !important; max-width: 92vw !important; padding: 12px !important; }
+        .swal2-checkout-popup .swal2-title { font-size: 1.4rem !important; margin-bottom: 8px !important; }
+        .swal2-checkout-popup .swal2-html-container { margin: 10px 0 15px !important; }
+        
+        .checkout-form-swal { text-align: left; padding: 5px; }
+        .form-row { display: grid; grid-template-columns: 1fr 1fr; gap: 14px; margin-bottom: 2px; }
+        .form-group { margin-bottom: 16px; }
+        .form-group label { display: block; font-weight: 600; margin-bottom: 6px; color: #1e293b; font-size: 0.9rem; }
+        
+        .swal-custom-input {
+            width: 100%; padding: 12px 14px; border: 2px solid var(--border); border-radius: 10px;
+            font-size: 0.95rem; background: #f8fafc; transition: all 0.2s ease;
+        }
+        .swal-custom-input:focus { border-color: var(--primary); outline: none; box-shadow: 0 0 0 4px rgba(0,119,182,0.15); background: #fff; }
+        .swal-custom-input::placeholder { color: #94a3b8; }
+        textarea.swal-custom-input { resize: vertical; min-height: 75px; line-height: 1.5; }
+
+        .swal2-confirm.swal2-confirm-custom { 
+            background: var(--success) !important; border-radius: 10px !important; 
+            padding: 12px 24px !important; font-weight: 700 !important; font-size: 1rem !important; 
+        }
+        .swal2-confirm-custom:hover { background: var(--success-dark) !important; }
+        .swal2-cancel.swal2-cancel-custom { 
+            background: #64748b !important; border-radius: 10px !important; 
+        }
+        .swal2-validation-message { 
+            font-size: 0.85rem !important; background: #fff7ed !important; 
+            color: #c2410c !important; border-radius: 6px !important; padding: 6px 10px !important; 
+        }
+
+        /* CART POPUP STYLING */
+        .swal2-cart-popup .swal2-html-container { max-height: 320px !important; overflow-y: auto !important; padding: 5px 0; }
+        .swal-cart-item { display: flex; justify-content: space-between; align-items: center; padding: 12px 0; border-bottom: 1px dashed #cbd5e1; }
+        .swal-cart-item:last-child { border-bottom: none; }
+        .swal-ctrl-btn { width: 30px; height: 30px; border: 2px solid var(--border); background: #fff; border-radius: 6px; cursor: pointer; display: inline-flex; align-items: center; justify-content: center; font-weight: bold; font-size: 1rem; transition: 0.15s; }
+        .swal-ctrl-btn:hover { background: #f1f5f9; border-color: #94a3b8; }
+        .swal-total-box { text-align: right; margin-top: 16px; padding-top: 12px; border-top: 2px solid #e2e8f0; font-weight: 800; font-size: 1.25rem; color: var(--primary-dark); }
+
+        @media (max-width: 520px) {
+            .form-row { grid-template-columns: 1fr; gap: 0; }
+            .swal2-checkout-popup { width: 95vw !important; }
+            header h1 { font-size: 1.5rem; }
+            #fab-cart { padding: 12px 20px; font-size: 0.9rem; bottom: 16px; right: 16px; }
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>💧 KATALOG AIR MINERAL P2S2</h1>
+    <p>Pemesanan Mudah • Harga Grosir Otomatis • Checkout Cepat</p>
+</header>
+
+<div class="container">
+    <div id="product-list" class="product-grid"></div>
+</div>
+
+<button id="fab-cart" onclick="showCart()">
+    🛒 Keranjang (<span id="fab-count">0</span>)
+</button>
+
+<script>
+    // DATA PRODUK & TIER HARGA
+    const products = [
+        { id: 1, name: "AMDK P2S2 220 ML", desc: "Isi: 48 CRT", tiers: [{max:14, price:19000}, {max:75, price:19000}, {max:200, price:18500}, {max:Infinity, price:18300}] },
+        { id: 2, name: "AMDK P2S2 220 ML", desc: "Isi: 40 CRT", tiers: [{max:75, price:17500}, {max:200, price:17000}, {max:399, price:16800}, {max:Infinity, price:16300}] },
+        { id: 3, name: "AMDK P2S2 330 ML", desc: "Per karton", tiers: [{max:5, price:38000}, {max:10, price:37000}, {max:25, price:34000}, {max:Infinity, price:33000}] },
+        { id: 4, name: "AMDK P2S2 660 ML (A)", desc: "Per karton", tiers: [{max:5, price:41500}, {max:10, price:40500}, {max:25, price:39500}, {max:Infinity, price:38500}] },
+        { id: 5, name: "AMDK P2S2 660 ML (B)", desc: "Per karton", tiers: [{max:5, price:41500}, {max:10, price:40500}, {max:25, price:39500}, {max:Infinity, price:38500}] }
+    ];
+
+    let cart = [];
+
+    const formatRupiah = (num) => new Intl.NumberFormat('id-ID', { style: 'currency', currency: 'IDR', minimumFractionDigits: 0 }).format(num);
+
+    function getTierPrice(productId, qty) {
+        if (qty <= 0) return 0;
+        const prod = products.find(p => p.id === productId);
+        for (let t of prod.tiers) {
+            if (qty <= t.max) return t.price;
+        }
+        return prod.tiers[prod.tiers.length - 1].price;
+    }
+
+    // RENDER PRODUK
+    function renderProducts() {
+        const container = document.getElementById('product-list');
+        container.innerHTML = products.map(p => `
+            <div class="product-card">
+                <div class="product-title">${p.name}</div>
+                <div class="product-desc">${p.desc}</div>
+                <div class="price-info" id="price-info-${p.id}">Masukkan jumlah untuk melihat harga/CRT</div>
+                <div class="input-group">
+                    <input type="number" id="qty-${p.id}" class="qty-input" min="1" value="1" oninput="updatePriceDisplay(${p.id}, this.value)">
+                    <button class="btn btn-add" onclick="addToCart(${p.id})">Tambah Keranjang</button>
+                </div>
+            </div>
+        `).join('');
+    }
+
+    function updatePriceDisplay(id, qty) {
+        qty = parseInt(qty) || 0;
+        const price = getTierPrice(id, qty);
+        document.getElementById(`price-info-${id}`).innerHTML = qty > 0 
+            ? `💰 Harga saat ini: <strong>${formatRupiah(price)}</strong> /CRT` 
+            : '📦 Masukkan jumlah untuk melihat harga/CRT';
+    }
+
+    function addToCart(id) {
+        const qtyInput = document.getElementById(`qty-${id}`);
+        let qty = parseInt(qtyInput.value);
+        if (!qty || qty <= 0) { Swal.fire('Perhatian', 'Masukkan jumlah minimal 1 CRT.', 'warning'); return; }
+
+        const existing = cart.find(c => c.id === id);
+        if (existing) existing.qty = qty;
+        else cart.push({ id, qty });
+        
+        qtyInput.value = 1;
+        updatePriceDisplay(id, 1);
+        updateFabCount();
+        Swal.fire({ icon: 'success', title: '✅ Berhasil!', text: 'Produk masuk ke keranjang.', timer: 1200, showConfirmButton: false });
+    }
+
+    function updateFabCount() {
+        const count = cart.reduce((sum, c) => sum + c.qty, 0);
+        document.getElementById('fab-count').textContent = count;
+        document.getElementById('fab-cart').style.display = count > 0 ? 'flex' : 'none';
+    }
+
+    // SHOW CART POPUP
+    function showCart() {
+        if (cart.length === 0) { Swal.fire('Keranjang Kosong', 'Silakan pilih produk terlebih dahulu.', 'info'); return; }
+
+        let html = cart.map(c => {
+            const prod = products.find(p => p.id === c.id);
+            const price = getTierPrice(c.id, c.qty);
+            return `
+                <div class="swal-cart-item">
+                    <div><strong>${prod.name}</strong><br><small style="color:#64748b;">${prod.desc} • ${formatRupiah(price)}/CRT</small></div>
+                    <div style="display:flex; align-items:center; gap:8px;">
+                        <button class="swal-ctrl-btn" onclick="changeCartQty(${c.id}, -1)">−</button>
+                        <span style="min-width:24px; text-align:center; font-weight:700;">${c.qty}</span>
+                        <button class="swal-ctrl-btn" onclick="changeCartQty(${c.id}, 1)">+</button>
+                    </div>
+                </div>`;
+        }).join('');
+
+        Swal.fire({
+            title: '🛒 Keranjang Belanja',
+            html: `<div style="text-align:left; padding:5px;">${html}</div><div class="swal-total-box">Total: ${formatRupiah(calcTotal())}</div>`,
+            showCancelButton: true, cancelButtonText: '← Lanjut Belanja', confirmButtonText: '📝 Checkout Sekarang',
+            allowOutsideClick: false, customClass: { popup: 'swal2-cart-popup' }
+        }).then((res) => { if (res.isConfirmed) showCheckoutForm(); });
+    }
+
+    function changeCartQty(id, delta) {
+        const item = cart.find(c => c.id === id);
+        if (item) {
+            item.qty += delta;
+            if (item.qty <= 0) cart = cart.filter(c => c.id !== id);
+            updateFabCount();
+            // Refresh popup
+            showCart(); 
+        }
+    }
+
+    function calcTotal() {
+        return cart.reduce((sum, c) => sum + getTierPrice(c.id, c.qty) * c.qty, 0);
+    }
+
+    // CHECKOUT FORM POPUP (DESAIN BARU)
+    function showCheckoutForm() {
+        Swal.fire({
+            title: '📦 Lengkapi Data Pengiriman',
+            html: `
+                <div class="checkout-form-swal">
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="swal-name">👤 Nama Lengkap</label>
+                            <input type="text" id="swal-name" class="swal-custom-input" placeholder="Budi Santoso">
+                        </div>
+                        <div class="form-group">
+                            <label for="swal-phone">📱 No. WhatsApp</label>
+                            <input type="tel" id="swal-phone" class="swal-custom-input" placeholder="08xxxxxxxxxx">
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label for="swal-address">📍 Alamat Pengiriman</label>
+                        <textarea id="swal-address" class="swal-custom-input" placeholder="Jalan, No. Rumah, RT/RW, Kelurahan, Kecamatan, Kota"></textarea>
+                    </div>
+                    <div class="form-group" style="margin-bottom:0;">
+                        <label for="swal-notes">📝 Catatan Tambahan (Opsional)</label>
+                        <input type="text" id="swal-notes" class="swal-custom-input" placeholder="Contoh: Kirim sebelum jam 12 siang / Titip di pos satpam">
+                    </div>
+                </div>
+            `,
+            showCancelButton: true, cancelButtonText: '← Kembali', confirmButtonText: '📲 Kirim ke WhatsApp',
+            allowOutsideClick: false, customClass: { popup: 'swal2-checkout-popup', confirmButton: 'swal2-confirm-custom', cancelButton: 'swal2-cancel-custom' },
+            preConfirm: () => {
+                const name = document.getElementById('swal-name').value.trim();
+                const phone = document.getElementById('swal-phone').value.trim();
+                const address = document.getElementById('swal-address').value.trim();
+                const notes = document.getElementById('swal-notes').value.trim();
+                if (!name || !phone || !address) { Swal.showValidationMessage('⚠️ Mohon isi Nama, No. HP, dan Alamat terlebih dahulu!'); return false; }
+                return { name, phone, address, notes };
+            }
+        }).then((res) => { if (res.isConfirmed) sendToWhatsApp(res.value); });
+    }
+
+    // KIRIM KE WA
+    function sendToWhatsApp(data) {
+        let msg = `*📦 PESANAN BARU - AIR MINERAL P2S2*\n\n`;
+        msg += `👤 *Nama:* ${data.name}\n📱 *No. HP:* ${data.phone}\n📍 *Alamat:* ${data.address}\n`;
+        if (data.notes) msg += `📝 *Catatan:* ${data.notes}\n`;
+        msg += `\n━━━━━━━━━━━━━━━━━━━━\n`;
+        msg += `🛒 *DETAIL PESANAN:*\n`;
+
+        cart.forEach((c, i) => {
+            const prod = products.find(p => p.id === c.id);
+            const price = getTierPrice(c.id, c.qty);
+            const subtotal = price * c.qty;
+            msg += `${i+1}. ${prod.name} (${prod.desc})\n   📦 ${c.qty} CRT × ${formatRupiah(price)} = *${formatRupiah(subtotal)}*\n`;
+        });
+
+        msg += `━━━━━━━━━━━━━━━━━━━━\n`;
+        msg += `💰 *TOTAL PEMBAYARAN: ${formatRupiah(calcTotal())}*\n━━━━━━━━━━━━━━━━━━━━\n`;
+        msg += `Mohon dikonfirmasi ketersediaan stok & ongkir. Terima kasih! 🙏`;
+
+        const waUrl = `https://wa.me/6282331583070?text=${encodeURIComponent(msg)}`;
+        window.open(waUrl, '_blank');
+        
+        Swal.fire({
+            icon: 'success', title: '✅ Terkirim!', text: 'Pesanan Anda sedang diproses oleh admin.',
+            confirmButtonText: 'Selesai', allowOutsideClick: false
+        }).then(() => {
+            cart = []; updateFabCount();
+        });
+    }
+
+    // INIT
+    renderProducts();
+    updateFabCount();
+</script>
+
+</body>
+</html>
